@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from '../compoents/Main'
-import Navbar from '../compoents/Navbar'
+
 import { Row } from '../compoents/Row'
 
 
@@ -18,7 +18,7 @@ const Home = () => {
    }
   return (
     <div >
-        <Navbar/>
+      
         <Main/>
         <Row rowID='1' Tittle ='UpComing ' fetchUrl={requests.requestUpComing}/>
         <Row rowID='2' Tittle ='Popular' fetchUrl={requests.requestPopular}/>

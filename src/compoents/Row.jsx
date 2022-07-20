@@ -28,7 +28,7 @@ console.log("this",movies)
   <>
     <h2 className='text-white font-bold md:text-xl p-4'>{Tittle}</h2>  
     <div className=' relative  flex items-center  group'>
-      <MdChevronLeft onClick={slidRight} className='bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cusror-pointer z-10 hidden group-hover:block' size ={40}/>
+      <MdChevronLeft onClick={slidLeft} className='bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cusror-pointer z-10 hidden group-hover:block' size ={40}/>
       <div id={'slider' + rowID} className=' w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
         
     {
