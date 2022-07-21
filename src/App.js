@@ -7,8 +7,7 @@ import Navbar from './compoents/Navbar';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Account from './pages/Account';
-import ProtectedRoute from './compoents/ProtectedRoute';
-
+import ProtectedRoute from'./compoents/ProtectedRoute'
 function App() {
   return (
   <>
@@ -18,9 +17,13 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/login' element={<Login/>}/>
     <Route path='/signup' element={<SignUp/>}/>
-    <Route path='/account' element= {<ProtectedRoute>
-      <Account/>
-    </ProtectedRoute> }/>
+    <Route path='/account' element= {
+      <ProtectedRoute>
+
+        <Account/>
+      </ProtectedRoute>
+      
+     }/>
   </Routes>
   </AuthContextProvider>
   
